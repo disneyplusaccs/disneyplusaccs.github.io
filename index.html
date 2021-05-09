@@ -1,0 +1,77 @@
+<style>
+  body {
+  background:lightgrey;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  top: 500%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#display {
+  font-size: 40px;
+  background: rgba(255,255,255,.3);
+  border-radius: 15px;
+  margin: 20px auto 0px auto;
+  width: 50%;
+  
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ }
+
+p {
+  font-size: 20px;
+  background: rgba(255,255,255,.3);
+  border-radius: 15px;
+  margin: 20px auto 0px auto;
+  width: 50%;
+  
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+  }</style><script>function generateRandomNumber() {
+  var min = 1000000;
+  var max = 9999999;
+  var rand = Math.floor(Math.random()* (max - min + 1)) + min;
+  if (min == 1 && max == 30) {rand = 6}
+  document.getElementById('display').innerText = rand
+}</script><body><div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+      
+      <h1 class="title">Get a free Disney+ Account!
+      </div>
+      <br>
+
+      <button class="btn btn-primary" onclick="generateRandomNumber();"> Get a DPLUS code</button>
+      <p>
+      Text FireyAPI#7685 on Discord with your DPLUS Code, and I will text you info for your new Disney+ account.
+      </p>
+      </h1>
+
+      <div id="display">   
+      </div>
+      
+  </div>
+</div>
